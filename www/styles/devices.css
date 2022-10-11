@@ -1,0 +1,154 @@
+/* Media Queries */
+
+@media screen and (max-width:900px){
+
+figure{
+    width: 30vw;
+}
+    
+figcaption{
+    font-size: smaller;
+}
+    
+.container { 
+    overflow: scroll;
+    max-width: 3vw;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    border-radius: 10px;
+    padding: 15vw;
+}
+    
+    
+.nature{
+    width: 80%;
+    height: 20%;
+}
+    
+.name {
+    font-size: 2vw;
+    opacity: 1;
+}  
+    
+}
+    
+@media (min-width:820px) and (max-width:1500px){
+    
+figure{
+    width: 30vw;
+}
+    
+figcaption{
+    font-size: smaller;
+}
+    
+h1#maintitle{ 
+      font-size:15vw;
+}
+    
+.name {
+      font-size: 4vw;
+}  
+    
+#videocontener{
+    width: 120%;
+    height: 30%;;
+}
+     
+.nature{
+    width: 120%;
+    height: 30%;
+    }
+      
+.container {
+    overflow: scroll; 
+    max-width: 40vw;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    border-radius: 10px;
+    padding: 15vw;
+}      
+}
+    
+@media (max-width:800px) and (max-height:1080px){
+    
+figure{
+    width: 30vw;
+}
+    
+figcaption{
+    font-size: smaller;
+}
+    
+h1#maintitle{ 
+    font-size: 15vw;
+}
+    
+.name {
+    font-size: 4vw;
+} 
+    
+.field{
+    font-size: 3vw;
+}
+    
+#videocontener{
+    width: 120%;
+    height: 30%;
+}
+     
+.nature{
+    width: 120%;
+    height: 30%;
+}
+      
+.container { 
+    overflow: scroll;
+    max-width: 40vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
+    border-radius: 10px;
+    padding: 15vw;
+}
+}
+
+@media (min-width:800px) and (max-width:1500px){
+
+    .box{
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+    
+    p{
+      font-size: 20px;
+    }
+    
+    form{
+      display: flex;
+      max-width: 30%;
+      margin: auto;
+    }
+    
+    }
+    
+    @media (max-width:800px) and (max-height:1000px){
+      
+    .box{
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+    
+    p{
+      font-size: 4vw;
+    }
+    
+    form{
+      display: flex;
+      max-width: 50%;
+      margin: auto;
+    }
+    
+    }

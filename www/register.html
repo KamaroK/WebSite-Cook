@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Voyager aux îles Cook</title>
+        <link rel="icon" type="image/svg" href="imgs/logo.svg">
+        
+        <meta charset="utf-8" />
+        <meta name="author" content="NGABONZIZA Aubin"/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="all">
+        <script src="scripts/connexion.js"></script>
+        <script src="scripts/inscription.js"></script>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class=" video-wrapper">
+                <video id="videoBG" autoplay muted loop>
+                    <source src="imgs/background.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+    
+        <div class="logo">
+            <img src="imgs/logo.svg" alt="logo" width="150"/>
+        </div>
+    
+        <header>
+            <h1 id = "maintitle"> COOK ISLANDS </h1>
+            <h1 id = "slogan"> Welcome to a litte paradise </h1>
+        </header>
+
+        <nav>
+            <div class="color-list">
+                <section class="volet" id="volet1">
+                    <h2 class="name"> <a href="index.html">Accueil</a> </h2>
+                </section>
+                <section class="volet" id="volet2">
+                    <h2 class="name"><a href="presentation.html">Les îles</a></h2>
+                </section>
+                <section class="volet" id="volet3">
+                    <h2 class="name"><a href="chatbox.html">Chatbox</a></h2>
+                </section>
+                <section class="volet" id="volet4">
+                    <h2 class="name"><a href="register.html">Inscription</a></h2>
+                </section>
+                <section class="volet" id="volet5">
+                    <h2 class="name"><a href="connexion.html">Connexion</a></h2>
+                </section>
+            </div>
+        </nav>
+
+            <div class="formulaire">
+                    <form class="inscription" onsubmit="return valideFormulaire(event);" method="post" action="../www/htbin/register.py" autocomplete="on">
+                        <p class="formName">INSCRIPTION</p>
+                            
+                        <br>
+                        <label for="firstname">Identité *</label>
+                        <input type="text" placeholder="prénom" name="firstname" id="firstname" required onkeyup="verifFirstName(this.value)">
+                        <br>
+                        <br>
+                        <input type="text" placeholder="nom" name="lastname" id="lastname" required onkeyup="verifLastName(this.value)">
+            
+                        <label for="birthdate">Date de naissance *</label>
+                        <input type="text" placeholder="jj / mm / aaaa" name="birthdate" id="birthdate" onkeyup="verifDate(this.value)">
+            
+                        <label for="username">Nom d'utilisateur *</label>
+                        <input type="text" placeholder="doit contenir au moins 6 caractères" name="username" id="username" required onkeyup="verifUserName(this.value)">
+            
+                        <label for="useremail">Adresse E-mail *</label>
+                        <input type="text"  placeholder="email" name="useremail" id="useremail" required onkeyup="verifEmail(this.value)">
+            
+                        <label for="userpwd">Mot de passe *</label>
+                        <input type="password" placeholder="doit contenir une majuscule une minuscule et un chiffre" name="userpwd" id="userpwd" required onkeyup="verifPwd(this.value)">
+            
+                        <input type="submit" value="INSCRIPTION" class="btnSubmit">      
+
+                    </form> 
+                    
+            </div>
+
+
+
+        <footer>
+            <a href="https://www.instagram.com/"><img src="imgs/icon/instaIcon.png" height=30 alt="Instagram"></a>
+            <a href="https://www.snapchat.com/"><img src="imgs/icon/snapIcon.png" height=30 alt = "Snapchat"></a>
+            <a href="https://www.facebook.com/"><img src="imgs/icon/facebookIcon.png" height=30 alt = "Facebook"></a>
+            <a href="https://www.twitter.com/"><img src="imgs/icon/twitterIcon.png" height=30 alt = "Twitter"></a>
+    
+            <br/>
+    
+            <a href="chatbox.html">Nous contacter</a>
+            <a href="#">Recrutement</a>
+            <a href="#">Mentions légales</a>
+            <p class="copyright">Cook Islands © 2022</p>
+        </footer>
+
+    </body>
+
+</html>
